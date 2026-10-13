@@ -1,0 +1,924 @@
+/* 반응형 전용: 데스크톱 css.chesse.css는 그대로 유지 */
+@font-face {
+    font-family: 'YeogiOttaeJalnanGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-display: swap;
+}
+
+.responsive {
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+    .wrap {
+        display: none;
+    }
+    .mobilhero {
+        display: none;
+    }
+    .wd {
+        width: 26%;
+        position: absolute;
+        top: 13%; left: 11%;
+        
+    }
+    .responsive {
+        display: block;
+        width: 100%;
+        font-family: 'YeogiOttaeJalnanGothic', sans-serif;
+    }
+
+    .responsive,
+    .responsive * {
+        box-sizing: border-box;
+    }
+
+    .responsive h2,
+    .responsive h3,
+    .responsive p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero_res {
+        width: 100%;
+        margin: 40px auto 0;
+        position: relative;
+    }
+
+    .main_res,
+    .profileimg_res {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .profile_res {
+        margin: 3% auto 0;
+    }
+
+    .design_res,
+    .coding_res,
+    .team_res {
+        width: 85%;
+        margin: 0 auto;
+        padding: 48px 0;
+    }
+
+    .section-title-image {
+        display: block;
+        width: calc(100% / .85);
+        max-width: none;
+        height: auto;
+        margin: 0 0 40px calc((100% - 100% / .85) / 2);
+    }
+
+    .project-group+.project-group,
+    .landing_contest_res {
+        margin-top: 48px;
+    }
+
+    .responsive .work_title {
+        font-size: clamp(24px, 4vw, 48px);
+        font-weight: normal;
+        line-height: 1.2;
+        color: #e23e38;
+        white-space: normal;
+        word-break: keep-all;
+        overflow-wrap: normal;
+        margin-bottom: 24px;
+    }
+
+    .cardnews_grid,
+    .product_grid,
+    .coding_grid,
+    .landing_contest_grid {
+        display: flex;
+        align-items: stretch;
+        gap: 24px;
+    }
+
+    .project_item,
+    .category-column {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .category-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .category-column>.work_title {
+        min-height: 2.4em;
+    }
+
+    .category-column>.project_item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* 원본 썸네일: 이미지 위 hover / 검정 배경 없음 */
+    .project_box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        aspect-ratio: 1;
+        background: #fff;
+        border: 2px solid #e33e36;
+        border-radius: 18px;
+        box-shadow: 6px 6px 0 #e33e36;
+        overflow: hidden;
+    }
+
+    .project_box img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .product_grid .project_box {
+        aspect-ratio: 1 / 1;
+    }
+
+    .coding_grid .project_box {
+        aspect-ratio: 4 / 3;
+    }
+
+    .responsive .project_name {
+        font-size: clamp(14px, 2vw, 20px);
+        line-height: 1.5;
+        text-align: center;
+        margin: 20px 0 14px;
+    }
+
+    .responsive .detail-button {
+        display: flex;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        border: 1.5px solid #e33e36;
+        border-radius: 12px;
+        background: #fff;
+        color: #e33e36;
+        text-decoration: none;
+        padding: 12px 10px;
+        min-height: 44px;
+        font-size: clamp(14px, 1.8vw, 20px);
+        line-height: 1.3;
+    }
+
+    .detail-button:focus-visible {
+        outline: 3px solid #111;
+        outline-offset: 4px;
+    }
+
+    .category-column .detail-button {
+        margin-top: auto;
+    }
+
+    .landing_contest_res {
+        display: flex;
+        gap: 5%;
+        align-items: center;
+    }
+
+    .landing_contest_grid {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .design_icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+        width: 10%;
+        flex-shrink: 0;
+    }
+
+    .design_icons img {
+        position: static;
+        display: block;
+        width: 100%;
+        max-width: 90px;
+        height: auto;
+        margin: 0;
+    }
+
+    .click_res {
+        animation: responsive-flash 1.2s ease-in-out infinite;
+    }
+
+    /* 팀 카드: 이미지 왼쪽 / 기존 설명·기여도·버튼 오른쪽 */
+    .team-list {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .team-card {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        padding: 28px;
+        background: #fff;
+        border: 2px solid #e33e36;
+        border-radius: 18px;
+        box-shadow: 6px 6px 0 #e33e36;
+    }
+
+    .team-thumb {
+        width: 34%;
+        flex-shrink: 0;
+        aspect-ratio: 4 / 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .team-thumb img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .team-info {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .responsive .team-category {
+        color: #e33e36;
+        font-size: clamp(20px, 2.5vw, 30px);
+        line-height: 1.25;
+        margin-bottom: 10px;
+    }
+
+    .responsive .team-info h3 {
+        font-size: clamp(16px, 2vw, 24px);
+        line-height: 1.4;
+        margin-bottom: 12px;
+    }
+
+    .responsive .team-part,
+    .responsive .team-tool {
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        font-size: clamp(13px, 1.5vw, 17px);
+        line-height: 1.7;
+        margin-bottom: 8px;
+        overflow-wrap: anywhere;
+    }
+
+    .contribution {
+        position: relative;
+        height: 26px;
+        border: 1px solid #e33e36;
+        background: #fffbe8;
+        margin: 14px 0;
+    }
+
+    .contribution>span {
+        display: block;
+        height: 100%;
+        background: #e33e36;
+    }
+
+    .contribution b {
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #e33e36;
+        font-size: 13px;
+    }
+
+    .team-actions {
+        display: flex;
+        gap: 10px;
+    }
+
+    .team-actions .detail-button {
+        flex: 1;
+    }
+
+    .gotop {
+        right: 20px;
+        bottom: 24px;
+        width: 52px;
+        scale: 1;
+    }
+}
+
+/* 모바일: 작업물 전부 flex-direction 세로 배치 */
+@media screen and (max-width:600px) {
+    .design_icons {
+        display: none;
+    }
+    .mobilhero {
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .hero_res {
+        margin-top: 20px;
+    }
+
+    .design_res,
+    .coding_res,
+    .team_res {
+        width: 88%;
+        padding: 32px 0;
+    }
+
+    .section-title-image {
+        width: calc(100% / .88);
+        margin-left: calc((100% - 100% / .88) / 2);
+        margin-bottom: 28px;
+    }
+
+    .cardnews_grid,
+    .product_grid,
+    .coding_grid,
+    .landing_contest_grid {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .category-column,
+    .project_item {
+        flex: initial;
+        width: 100%;
+    }
+
+    .category-column>.work_title {
+        min-height: 0;
+    }
+
+    .responsive .work_title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .project-group+.project-group,
+    .landing_contest_res {
+        margin-top: 40px;
+    }
+
+    .landing_contest_res {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+    }
+
+    .design_icons {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .design_icons img {
+        width: 36px;
+        height: auto;
+    }
+
+    .team-card {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+        padding: 20px;
+    }
+
+    .team-thumb {
+        width: 100%;
+        aspect-ratio: 2 / 1;
+    }
+
+    .team-info {
+        width: 100%;
+    }
+
+    .team-actions {
+        flex-wrap: wrap;
+    }
+
+    .team-actions .detail-button {
+        min-width: 110px;
+    }
+
+    .responsive .project_name {
+        font-size: 18px;
+    }
+
+    .detail-button {
+        font-size: 16px;
+    }
+
+    .gotop {
+        width: 44px;
+        right: 12px;
+        bottom: 16px;
+    }
+}
+
+@keyframes responsive-flash {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .35;
+    }
+}
+
+@media (prefers-reduced-motion:reduce) {
+    .responsive .click_res {
+        animation: none;
+    }
+}
+
+/* ==================================================
+   추가 01. 1200px 이하 햄버거 메뉴
+   ================================================== */
+.responsive-menu {
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+    .mobilhero {
+        display: none;
+    }
+    .responsive-menu {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 2100;
+        font-family: 'YeogiOttaeJalnanGothic', sans-serif;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        width: 52px;
+        height: 52px;
+        padding: 0;
+        border: 2px solid #e33e36;
+        border-radius: 12px;
+        background: #fffbe8;
+        box-shadow: 4px 4px 0 #e33e36;
+        cursor: pointer;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 24px;
+        height: 3px;
+        background: #e33e36;
+        border-radius: 3px;
+        transition: transform .2s, opacity .2s;
+    }
+
+    .menu-toggle[aria-expanded="true"] span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .menu-toggle[aria-expanded="true"] span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle[aria-expanded="true"] span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .menu-panel {
+        position: absolute;
+        top: 68px;
+        right: 0;
+        width: min(300px, calc(100vw - 40px));
+        max-height: calc(100dvh - 108px);
+        overflow-y: auto;
+        box-sizing: border-box;
+        padding: 20px;
+        background: #fffbe8;
+        border: 2px solid #e33e36;
+        border-radius: 16px;
+        box-shadow: 5px 5px 0 #e33e36;
+    }
+
+    .menu-panel[hidden] {
+        display: none;
+    }
+
+    .menu-caption {
+        margin: 0 0 12px;
+        font-size: 13px;
+        color: #e33e36;
+        letter-spacing: 2px;
+    }
+
+    .menu-panel a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        min-height: 48px;
+        padding: 10px 0;
+        color: #111;
+        text-decoration: none;
+        border-bottom: 1px solid #e33e3650;
+        font-size: 18px;
+    }
+
+    .menu-panel a:last-child {
+        border-bottom: 0;
+    }
+
+    .menu-panel a span {
+        font-size: 12px;
+        color: #e33e36;
+    }
+
+    .menu-panel a:focus-visible,
+    .menu-toggle:focus-visible {
+        outline: 3px solid #111;
+        outline-offset: 4px;
+    }
+
+    .responsive [id] {
+        scroll-margin-top: 80px;
+    }
+
+    /* 클릭 후 흰 배경·빨간 글씨를 빨간 배경·흰 글씨로 반전 */
+    .responsive .detail-button {
+        transition: background-color .15s, color .15s;
+    }
+
+    .responsive .detail-button:active,
+    .responsive .detail-button.is-selected {
+        background: #e33e36;
+        color: #fff;
+    }
+
+    .profile_res {
+        position: relative;
+    }
+
+    .instar_re {
+        display: flex;
+        position: absolute;
+        top: 39%;
+        left: 41%;
+
+    }
+
+    .instar_rere {
+        width: 60%;
+    }
+
+    .instar_rere:hover {
+        scale: 1.1;
+        cursor: pointer;
+    }
+
+    .no {
+        width: 60%;
+        margin-left: 105%;
+    }
+
+    .no:hover {
+        scale: 1.1;
+        cursor: pointer;
+    }
+
+
+}
+
+@media screen and (max-width:600px) {
+    .responsive-menu {
+        top: 14px;
+        right: 14px;
+    }
+
+    .menu-toggle {
+        width: 46px;
+        height: 46px;
+    }
+
+    .menu-panel {
+        top: 60px;
+        width: min(300px, calc(100vw - 28px));
+    }
+
+    .br {
+        display: none;
+    }
+    .hero_res {
+        display: none;
+    }
+    .profile_res {
+        display: none; 
+    }
+}
+
+/* 고탑: 햄버거 메뉴와 동일한 크림색 / 빨간 테두리 / 그림자 */
+.gotop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    padding: 0;
+    background: #fffbe8;
+    border: 2px solid #e33e36;
+    border-radius: 12px;
+    box-shadow: 4px 4px 0 #e33e36;
+    clip-path: none;
+    overflow: visible;
+    scale: 1;
+    text-decoration: none;
+}
+
+.gotop-arrow {
+    position: relative;
+    display: block;
+    width: 3px;
+    height: 22px;
+    background: #e33e36;
+    border-radius: 2px;
+}
+
+.gotop-arrow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    border-top: 3px solid #e33e36;
+    border-left: 3px solid #e33e36;
+    transform: translateX(-50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+.gotop:focus-visible {
+    outline: 3px solid #111;
+    outline-offset: 5px;
+}
+
+@media screen and (max-width:600px) {
+    .gotop {
+        width: 46px;
+        height: 46px;
+    }
+}
+
+/* 모바일 카드뉴스: 썸네일과 이름만 표시 */
+@media screen and (max-width:600px) {
+    .responsive .cardnews_grid .detail-button {
+        display: none;
+    }
+}
+
+/* 모바일 다크모드 대응: 사이트는 밝은 색상 사용 */
+:root {
+    color-scheme: light only;
+}
+
+html,
+body,
+.responsive {
+    background-color: #fffbe8;
+    color: #111;
+}
+/* ==================================================
+   2026-10-12 수정: 히어로 / SNS / 모바일 가로 작업물
+   ================================================== */
+.mobilhero {display:none;}
+.team {container-type:inline-size;}
+
+@media screen and (max-width:1200px) {
+ .hero_res {position:relative;}
+ .tablet-girl {position:absolute;left:22%;top:28%;width:48%;height:auto;z-index:2;}
+ .tablet-cheese {position:absolute;right:30%;top:62%;width:15%;height:auto;z-index:3;animation:icon-float 3s ease-in-out infinite;}
+ .profile_res {position:relative;}
+ .social-links {position:absolute;display:flex;align-items:center;justify-content:space-between;top:38%;left:41%;width:23%;height:6%;}
+ .social-float {display:flex;align-items:center;justify-content:center;width:35%;height:100%;animation:icon-float 3s ease-in-out infinite;}
+ .social-float:nth-child(2) {animation-delay:-1.5s;}
+ .social-float img {display:block;width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;margin:0;}
+ .social-float:focus-visible {outline:2px solid #e33e36;outline-offset:3px;}
+}
+@media screen and (max-width:600px) {
+ .mobilhero {display:block;position:relative;width:100%;}
+ .mobile-hero-image {display:block;width:100%;height:auto;}
+ .mobilhero .social-links {top:29.6%;left:36%;width:33%;height:2.2%;}
+ .mobilhero .social-float {width:34%;height:100%;}
+ .hero_res,.profile_res {display:none;}
+ /* 아래 두 묶음만 가로 2열 유지: 나머지 모바일 세로 배치는 유지 */
+ .landing_contest_grid,.coding_grid {display:flex;flex-direction:row;align-items:stretch;gap:16px;width:100%;}
+ .landing_contest_grid > .category-column,.coding_grid > .category-column {flex:1;min-width:0;width:auto;}
+ .landing_contest_grid .project_box,.coding_grid .project_box {aspect-ratio:1 / 1;height:auto;}
+ .responsive .landing_contest_grid .work_title,.responsive .coding_grid .work_title {font-size:clamp(18px,4.6vw,26px);line-height:1.2;min-height:2.4em;}
+ .responsive .landing_contest_grid .project_name,.responsive .coding_grid .project_name {font-size:14px;overflow-wrap:anywhere;}
+ .responsive .landing_contest_grid .detail-button,.responsive .coding_grid .detail-button {font-size:13px;padding:10px 4px;}
+}
+
+/* 원본 글씨를 재사용해 비버모아 오타 한 글자만 수정 */
+.beaver-glyph-fix {position:absolute;left:42.34375%;top:48.333333%;width:.833333%;height:2.12963%;z-index:15;pointer-events:none;overflow:hidden;}
+/* 노션과 SNS는 부모 묶음 하나를 움직여 같은 타이밍으로 표시 */
+@media screen and (max-width:1200px) {
+ .social-links {animation:icon-float 3s ease-in-out infinite;}
+ .social-float,.social-float:nth-child(2) {animation:none;}
+}
+/* 모바일 상세페이지: 가로 2열 / 정사각형 */
+@media screen and (max-width:600px) {
+ .responsive .product_grid {display:flex;flex-direction:row;gap:16px;align-items:stretch;}
+ .responsive .product_grid > .project_item {flex:1;min-width:0;width:auto;}
+ .responsive .product_grid .project_box {aspect-ratio:1 / 1;height:auto;}
+ .responsive .product_grid .project_name {font-size:14px;}
+ .responsive .product_grid .detail-button {font-size:13px;padding:10px 4px;}
+}
+@media (prefers-reduced-motion:reduce) {
+ .social-links {animation:none;}
+
+}
+
+/* 썸네일의 원본 비율 유지, 기존 잘린 빨간 테두리 가장자리 제거 */
+@media screen and (max-width:1200px) {
+ .responsive .project_box img {object-fit:contain;clip-path:inset(2px);}
+ .responsive .team-thumb {aspect-ratio:1 / 1;background:#fff;overflow:hidden;}
+ .responsive .team-thumb img {object-fit:contain;clip-path:inset(2px);}
+}
+
+/* 사이트 공통 스크롤바: 크림 배경 + 빨간 스크롤 손잡이 */
+html {scrollbar-width:thin;scrollbar-color:#e33e36 #fffbe8;}
+::-webkit-scrollbar {width:10px;height:10px;}
+::-webkit-scrollbar-track {background:#fffbe8;}
+::-webkit-scrollbar-thumb {background:#e33e36;border:2px solid #fffbe8;border-radius:10px;}
+::-webkit-scrollbar-thumb:hover {background:#bd302b;}
+::-webkit-scrollbar-corner {background:#fffbe8;}
+
+.gotop {clip-path:none;}
+
+/* 팀 hover 윗쪽 흰 틈 보정: 원본 이미지 margin-top 위치 반영 */
+@media screen and (min-width:1201px) {
+ #work-beaver,#work-365mc {top:calc(31.111111% - 4px);height:calc(25.185185% + 3px);}
+ #work-beaver .work-veil,#work-365mc .work-veil {inset:0;width:100%;height:100%;}
+}
+/* 비버모아와 READ.ON: 프로세스 / 프로토타입 세로 배치 */
+#work-beaver .beaver-actions,#work-readon .beaver-actions {flex-direction:column;gap:12px;}
+#work-beaver .work-button,#work-readon .work-button {min-width:65%;}
+.responsive .team-card:first-child .team-actions,
+.responsive .team-card:last-child .team-actions {flex-direction:column;}
+.responsive .team-card:first-child .team-actions .detail-button,
+.responsive .team-card:last-child .team-actions .detail-button {flex:initial;width:100%;}
+/* 이미지 커서: 터치 기기는 기본 동작 유지 */
+.cheese-cursor {display:none;position:fixed;top:0;left:0;width:28px;height:auto;pointer-events:none;z-index:2147483647;}
+@media (hover:hover) and (pointer:fine) {
+ .cheese-cursor-active,.cheese-cursor-active * {cursor:none !important;}
+ .cheese-cursor-active .cheese-cursor {display:block;}
+}
+
+/* 최신 제공 이미지 커서: 28px → 40px */
+.cheese-cursor {width:40px;}
+
+/* 601~1200px: 상세페이지와 코딩 작업물 카드 크기 통일 */
+@media screen and (min-width:601px) and (max-width:1200px) {
+ .responsive .product_grid,.responsive .coding_grid {gap:24px;}
+ .responsive .product_grid .project_box,
+ .responsive .coding_grid .project_box {width:100%;height:auto;aspect-ratio:4 / 3;}
+ /* 제목 한 줄일 때 불필요한 두 줄 높이를 제거 */
+ .responsive .coding_grid .category-column > .work_title {min-height:0;margin-bottom:24px;}
+}
+
+/* 메디큐브 로고는 카드 중앙에 조금 작게 표시 */
+@media screen and (max-width:1200px) {
+ .responsive .project_box img.medicube-logo {width:78%;height:78%;object-fit:contain;}
+ .responsive .project_box picture {display:block;width:100%;height:100%;}
+ .responsive .project_box picture img {width:100%;height:100%;object-fit:contain;clip-path:none;}
+ .responsive .team-thumb img {clip-path:none;}
+}
+
+/* 팀 프로젝트: 601~1200px 이전 로고, 600px 이하 새 소개 이미지 */
+@media screen and (max-width:1200px) {
+ .responsive .team-picture {display:block;width:100%;height:100%;}
+ .responsive .team-picture img {display:block;width:100%;height:100%;object-fit:contain;}
+}
+@media screen and (max-width:600px) {
+ .responsive .team-thumb {width:100%;height:auto;aspect-ratio:1 / 1;}
+ .responsive .team-picture {width:100%;height:100%;}
+ .responsive .team-picture img {width:100%;height:100%;object-fit:contain;}
+}
+
+/* 모바일 팀 이미지: 기존 카드 안 정사각형에 바로 배치, 이중 테두리 없음 */
+@media screen and (max-width:600px) {
+ .responsive .team-thumb {width:100%;height:auto;aspect-ratio:1;border:0;border-radius:0;box-shadow:none;padding:0;margin:0;overflow:hidden;background:transparent;}
+ .responsive .team-picture {display:block;width:100%;height:100%;border:0;border-radius:0;box-shadow:none;padding:0;}
+ .responsive .team-picture img {display:block;width:100%;height:100%;object-fit:cover;border:0;border-radius:0;box-shadow:none;padding:0;clip-path:none;}
+}
+
+/* 모바일 팀 이미지: 작업물과 동일한 모서리 */
+@media screen and (max-width:600px) {
+ .responsive .team-thumb,.responsive .team-picture,.responsive .team-picture img {border-radius:18px;}
+ .responsive .team-thumb {overflow:hidden;}
+}
+
+/* 모바일: 랜딩/콘테스트/코딩 제목 아래 여백을 다른 작업물과 동일하게 */
+@media screen and (max-width:600px) {
+ .responsive .landing_contest_grid .category-column > .work_title,
+ .responsive .coding_grid .category-column > .work_title {min-height:0;margin-bottom:20px;}
+}
+
+/* PART / TOOL: 자세히보기 버튼과 동일한 굵은 sans-serif */
+@media screen and (max-width:1200px) {
+ .responsive .team-part,.responsive .team-tool {font-family:sans-serif;font-weight:700;}
+ .responsive .team-tool {display:flex;align-items:center;flex-wrap:wrap;gap:10px;}
+ .responsive .desktop-tool-icons {display:block;height:24px;width:auto;max-width:100%;overflow:hidden;flex-shrink:0;}
+}
+
+/* 툴 아이콘 원본의 크림 배경을 흰 카드에 흡수, 검정 아이콘은 유지 */
+@media screen and (max-width:1200px) {
+ .responsive .desktop-tool-icons {filter:grayscale(1) contrast(3);mix-blend-mode:multiply;}
+}
+
+/* 태블릿 히어로: 소녀와 치즈 약 20% 확대, 상대 위치 함께 조정 */
+@media screen and (min-width:601px) and (max-width:1200px) {
+ .tablet-girl {left:19.2%;top:24.4%;width:57.6%;}
+ .tablet-cheese {right:23.2%;top:65.2%;width:18%;}
+}
+
+/* SNS/노션: 원본 이미지의 각 글자 오른쪽에 고정 비율로 배치 */
+@media screen and (min-width:601px) and (max-width:1200px) {
+ .profile_res .social-links {position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none;animation:social-group-float 3s ease-in-out infinite;}
+ .profile_res .social-float {position:absolute;top:39.7%;width:3.5%;height:auto;aspect-ratio:1;pointer-events:auto;}
+ .profile_res .social-sns {left:41%;}
+ .profile_res .social-notion {left:53%;}
+ .profile_res .social-float img {width:100%;height:100%;max-width:none;max-height:none;object-fit:contain;}
+}
+@media screen and (max-width:600px) {
+ .mobilhero .social-links {position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none;animation:social-group-float 3s ease-in-out infinite;}
+ .mobilhero .social-float {position:absolute;top:30.1%;width:7.5%;height:auto;aspect-ratio:1;pointer-events:auto;}
+ .mobilhero .social-sns {left:44.5%;}
+ .mobilhero .social-notion {left:70%;}
+ .mobilhero .social-float img {width:100%;height:100%;max-width:none;max-height:none;object-fit:contain;}
+}
+@keyframes social-group-float {0%,100% {transform:translateY(0);}50% {transform:translateY(-3px);}}
+@media (prefers-reduced-motion:reduce) {.profile_res .social-links,.mobilhero .social-links {animation:none;}}
+
+/* 오타 수정 글자를 원본 이미지 자체의 좌표에 맞춤: margin 영향 제거 */
+.team-artwork {position:relative;margin-top:-5px;}
+.team-artwork .team_img {display:block;width:100%;height:auto;margin-top:0;}
+.team-artwork .beaver-glyph-fix {left:42.34375%;top:48.425926%;width:.833333%;height:auto;aspect-ratio:1;}
+
+/* 인스타 링크: 기존 아이콘 크기 유지 */
+@media screen and (min-width:601px) and (max-width:1200px) {
+ .design_icons .instagram-link {display:block;width:100%;max-width:90px;}
+}
+@media screen and (max-width:600px) {
+ .design_icons .instagram-link {display:block;flex:0 0 36px;width:36px;}
+}
+
+/* 반응형 인스타/노션: 클릭·hover 시 1.1배 */
+@media screen and (max-width:1200px) {
+ .responsive .social-float {transition:scale .3s ease;transform-origin:center;}
+ .responsive .social-float:hover,.responsive .social-float:active,.responsive .social-float:focus-visible {scale:1.1;}
+ .responsive .instagram-link {transition:scale .3s ease;}
+ .responsive .instagram-link:hover,.responsive .instagram-link:active,.responsive .instagram-link:focus-visible {scale:1.1;}
+ .cafe24-responsive {grid-column:1 / -1;margin-top:36px;}
+ .cafe24-responsive .project_item {width:min(100%,480px);margin:0 auto;}
+ .cafe24-box {display:flex;align-items:center;justify-content:center;background:#fff;border:2px solid #e33e36;box-shadow:4px 4px 0 #e33e36;}
+ .cafe24-box .cafe24-logo {font-size:clamp(40px,9vw,72px);}
+}
+/* 코딩 작업물 정렬: Cafe24가 세 번째 좁은 열로 끼어들지 않도록 */
+@media screen and (max-width:1200px) {
+ .responsive .coding_grid {display:flex;flex-wrap:wrap;align-items:stretch;gap:24px;}
+ .responsive .coding_grid > .category-column {flex:0 0 calc(50% - 12px);width:calc(50% - 12px);min-width:0;display:flex;flex-direction:column;}
+ .responsive .coding_grid > .cafe24-responsive {flex:0 0 calc(50% - 12px);margin:24px auto 0;}
+ .responsive .coding_grid .category-column > .work_title {min-height:2.4em;display:flex;align-items:flex-end;margin-bottom:20px;}
+ .responsive .coding_grid .project_item {width:100%;min-width:0;container-type:inline-size;}
+ .responsive .coding_grid .project_name {white-space:nowrap;overflow-wrap:normal;word-break:normal;font-size:clamp(8px,6.5cqw,20px);min-height:3em;display:flex;align-items:center;justify-content:center;}
+ .responsive .coding_grid .cafe24-box {container-type:inline-size;position:relative;}
+ .responsive .coding_grid .cafe24-box .cafe24-logo {font-size:clamp(12px,25cqw,72px);letter-spacing:-.06em;max-width:100%;box-sizing:border-box;padding:12%;}
+}
+@media screen and (max-width:600px) {
+ .responsive .coding_grid {gap:16px;}
+ .responsive .coding_grid > .category-column {flex-basis:calc(50% - 8px);width:calc(50% - 8px);}
+ .responsive .coding_grid .project_box {aspect-ratio:1;}
+}
+/* 반응형 코딩 섹션 글씨체 통일 */
+@media screen and (max-width:1200px) {
+ .responsive .coding_res .work_title,
+ .responsive .coding_res .project_name {font-family:'YeogiOttaeJalnanGothic',sans-serif;font-weight:normal;}
+}

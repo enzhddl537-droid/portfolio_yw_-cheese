@@ -1,0 +1,735 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: #fffbe8;
+}
+.wrap {
+    max-width: 1920px;
+    height: auto;
+}
+.responsive {
+    display: none;
+}
+
+.hero {
+    width: 85%;
+    /* height: auto; */
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+}
+
+.hero div {
+    position: static;
+}
+
+.hero_img {
+    display: block;
+    width: 100%;
+    margin-top: -60px;
+    height: auto;
+}
+
+.me {
+    position: absolute;
+    left: 22%;
+    margin-top: -40%;
+    width: 48%;
+    z-index: 999;
+}
+.che {
+    position: absolute;
+    right: 30%;
+    margin-top: -20%;
+    width: 15%;
+    z-index: 999;
+    transition: 0.3s;
+    animation: icon-float 3s ease-in-out infinite;
+}
+@keyframes icon-float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+.hero_design {
+    position: absolute;
+    display: block;
+    top: 21%;
+    /* 위아래 위치: 작을수록 위로 이동 */
+    left: 22%;
+    /* 좌우 위치 */
+    width: 20%;
+    height: auto;
+    margin: 0;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+.hero_design:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.hero_coding {
+    position: absolute;
+    display: block;
+    top: 35%;
+    /* 위아래 위치: 작을수록 위로 이동 */
+    left: 9%;
+    /* 좌우 위치 */
+    width: 12%;
+    height: auto;
+    margin: 0;
+    z-index: 100;
+    transition: 0.5s;
+}
+
+.hero_coding:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.hero_team {
+    position: absolute;
+    display: block;
+    bottom: 6%;
+    /* 위아래 위치: 작을수록 위로 이동 */
+    right: 12%;
+    /* 좌우 위치 */
+    width: 14%;
+    height: auto;
+    margin: 0;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+.hero_team:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.hero_profile {
+    position: absolute;
+    display: block;
+    top: 15%;
+    /* 위아래 위치: 작을수록 위로 이동 */
+    left: 7%;
+    /* 좌우 위치 */
+    width: 13%;
+    height: auto;
+    margin: 0;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+.hero_profile:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.profile {
+    width: 85%;
+    /* height: auto; */
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+}
+
+.profile_img {
+    display: block;
+    width: 100%;
+    margin-top: -30px;
+}
+
+.designtwo {
+    position: absolute;
+    display: block;
+    top: 22%;
+    /* 위아래 위치: 작을수록 위로 이동 */
+    left: 54%;
+    /* 좌우 위치 */
+    width: 13%;
+    height: auto;
+    margin: 0;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+.designtwo:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.codingtwo {
+    position: absolute;
+    display: block;
+    top: 14%;
+    /* 위아래 위치: 작을수록 위로 이동 */
+    right: 1%;
+    /* 좌우 위치 */
+    width: 13%;
+    height: auto;
+    margin: 0;
+    z-index: 100;
+    transition: 0.3s;
+}
+.codingtwo:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+.teamtwo {
+    position: absolute;
+    display: block;
+    bottom: 20%;
+    /* 위아래 위치: 작을수록 위로 이동 */
+    right: 31%;
+    /* 좌우 위치 */
+    width: 15%;
+    height: auto;
+    margin: 0;
+    z-index: 100;
+    transition: 0.3s;
+}
+.teamtwo:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+.instar {
+    position: absolute;
+    display: block;
+    bottom: 5.5%;
+    /* 위아래 위치: 작을수록 위로 이동 */
+    right: 19%;
+    /* 좌우 위치 */
+    width: 3%;
+    height: auto;
+    margin: 0;
+    z-index: 100;
+    transition: 0.3s;
+    animation: icon-float 3s ease-in-out infinite;
+}
+@keyframes icon-float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}
+.instar:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+
+.notion {
+    position: absolute;
+    display: block;
+    bottom: 5%;
+    /* 위아래 위치: 작을수록 위로 이동 */
+    right: 8.5%;
+    /* 좌우 위치 */
+    width: 3.2%;
+    height: auto;
+    margin: 0;
+    z-index: 100;
+    transition: 0.3s;
+    animation: icon-float 3s ease-in-out infinite;
+}
+@keyframes icon-float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}
+.notion:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.design {
+    width: 85%;
+    /* height: auto; */
+    margin: 0 auto;
+    position: relative;
+}
+
+.design_img {
+    display: block;
+    width: 100%;
+    margin-top: 100px;
+}
+.profilethree {
+    position: absolute;
+    display: block;
+    top: 3.5%;
+    /* 위아래 위치: 작을수록 위로 이동 */
+    right: 41%;
+    /* 좌우 위치 */
+    width: 10%;
+    height: auto;
+    margin: 0;
+    z-index: 100;
+    transition: 0.3s;
+}
+.profilethree:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+.codingthree {
+    position: absolute;
+    display: block;
+    bottom: 28.5%;
+    /* 위아래 위치: 작을수록 위로 이동 */
+    right: 39%;
+    /* 좌우 위치 */
+    width: 10%;
+    height: auto;
+    margin: 0;
+    z-index: 100;
+    transition: 0.3s;
+}
+.codingthree:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+.teamthree {
+    position: absolute;
+    display: block;
+    bottom: 10%;
+    /* 위아래 위치: 작을수록 위로 이동 */
+    right: 15%;
+    /* 좌우 위치 */
+    width: 14%;
+    height: auto;
+    margin: 0;
+    z-index: 100;
+    transition: 0.3s;
+}
+.teamthree:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.click {
+    position: absolute;
+    display: block;
+    bottom: 20.5%;
+    /* 위아래 위치: 작을수록 위로 이동 */
+    right: 43.8%;
+    /* 좌우 위치 */
+    width: 4%;
+    height: auto;
+    margin: 0;
+    z-index: 100;
+    transition: 0.3s;
+    animation: blank .7s infinite;
+}
+@keyframes blank {
+    from{
+        opacity: 1;
+    }
+    to {
+        opacity: 0.7;
+    }
+}
+.redinstar {
+    position: absolute;
+    display: block;
+    bottom: 14.5%;
+    /* 위아래 위치: 작을수록 위로 이동 */
+    right: 44%;
+    /* 좌우 위치 */
+    width: 3.5%;
+    height: auto;
+    margin: 0;
+    z-index: 100;
+    transition: 0.3s;
+}
+.redinstar:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+.adimg {
+    position: absolute;
+    display: block;
+    bottom: 12%;
+    /* 위아래 위치: 작을수록 위로 이동 */
+    right: 43.4%;
+    /* 좌우 위치 */
+    width: 5%;
+    height: auto;
+    margin: 0;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+.coding {
+    width: 85%;
+    /* height: auto; */
+    margin: 0 auto;
+    position: relative;
+}
+
+.coding_img {
+    display: block;
+    width: 100%;
+    margin-top: -5px;
+}
+.profilefour {
+    position: absolute;
+    display: block;
+    top: 3%;
+    /* 위아래 위치: 작을수록 위로 이동 */
+    right: 43.4%;
+    /* 좌우 위치 */
+    width: 10%;
+    height: auto;
+    margin: 0;
+    z-index: 100;
+    transition: 0.3s;
+}
+.profilefour:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+.designfour {
+    position: absolute;
+    display: block;
+    bottom: 25%;
+    /* 위아래 위치: 작을수록 위로 이동 */
+    left: 16%;
+    /* 좌우 위치 */
+    width: 10%;
+    height: auto;
+    margin: 0;
+    z-index: 100;
+    transition: 0.3s;
+}
+.designfour:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+.teamfour {
+    position: absolute;
+    display: block;
+    bottom: 26%;
+    /* 위아래 위치: 작을수록 위로 이동 */
+    right: 20%;
+    /* 좌우 위치 */
+    width: 14%;
+    height: auto;
+    margin: 0;
+    z-index: 100;
+    transition: 0.3s;
+}
+.teamfour:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.team {
+    width: 85%;
+    /* height: auto; */
+    margin: 0 auto;
+    position: relative;
+}
+.profilefive {
+    position: absolute;
+    display: block;
+    top: 5%;
+    /* 위아래 위치: 작을수록 위로 이동 */
+    right: 37%;
+    /* 좌우 위치 */
+    width: 12%;
+    height: auto;
+    margin: 0;
+    z-index: 100;
+    transition: 0.3s;
+}
+.profilefive:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+.designfive {
+    position: absolute;
+    display: block;
+    top: 15%;
+    /* 위아래 위치: 작을수록 위로 이동 */
+    right: 28%;
+    /* 좌우 위치 */
+    width: 10%;
+    height: auto;
+    margin: 0;
+    z-index: 100;
+    transition: 0.3s;
+}
+.designfive:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+.teamfive {
+    position: absolute;
+    display: block;
+    bottom: 25.5%;
+    /* 위아래 위치: 작을수록 위로 이동 */
+    left: 40%;
+    /* 좌우 위치 */
+    width: 10%;
+    height: auto;
+    margin: 0;
+    z-index: 100;
+    transition: 0.3s;
+}
+.teamfive:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.team_img {
+    display: block;
+    width: 100%;
+    margin-top: -5px;
+}
+/* ==================================================
+   추가 01. 말풍선 섹션 이동 (기존 위치 / 크기 유지)
+   ================================================== */
+html { scroll-behavior: smooth; }
+.section-link { text-decoration: none; overflow: visible; }
+.section-link img { display: block; width: 100%; height: auto; }
+.section-link:focus-visible { outline: 2px solid #e33d38; outline-offset: 4px; }
+section[id] { scroll-margin-top: 20px; }
+
+/* 캐릭터와 치즈는 원본 .me 이미지로 표시합니다. */
+
+/* ==================================================
+   추가 03. 작업물 hover / 버튼 (원본 빨간 테두리 안쪽)
+   ================================================== */
+.work-card { position: absolute; z-index: 20; overflow: hidden; }
+.work-link { display: block; width: 100%; height: 100%; text-decoration: none; }
+.work-veil {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: rgba(0, 0, 0, .8);
+    opacity: 0;
+    transition: opacity .25s ease;
+}
+.work-card:hover .work-veil,
+.work-card:focus-within .work-veil { opacity: 1; }
+.work-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .7em 1.1em;
+    border: 1px solid #fff;
+    border-radius: 999px;
+    color: #fff;
+    background: transparent;
+    font: 700 clamp(10px, 1vw, 18px) / 1.2 sans-serif;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.work-button:hover, .work-button:focus-visible { color: #fff; background: #e33d38; border-color: #e33d38; }
+.beaver-actions { flex-wrap: wrap; }
+
+/* ediya: 위치 / 크기 */
+#work-ediya {
+    left: 63.020833333333336%;
+    top: 7.87037037037037%;
+    width: 18.958333333333336%;
+    height: 21.018518518518515%;
+    border-radius: 4.945054945054945% / 7.929515418502203%;
+}
+
+/* domino: 위치 / 크기 */
+#work-domino {
+    left: 13.59375%;
+    top: 31.574074074074073%;
+    width: 14.375%;
+    height: 25.555555555555554%;
+    border-radius: 6.521739130434782% / 6.521739130434782%;
+}
+
+/* innisfree: 위치 / 크기 */
+#work-innisfree {
+    left: 29.114583333333336%;
+    top: 31.574074074074073%;
+    width: 14.270833333333334%;
+    height: 25.555555555555554%;
+    border-radius: 6.569343065693431% / 6.521739130434782%;
+}
+
+/* wiggle: 위치 / 크기 */
+#work-wiggle {
+    left: 44.53125%;
+    top: 31.574074074074073%;
+    width: 14.322916666666668%;
+    height: 25.555555555555554%;
+    border-radius: 6.545454545454546% / 6.521739130434782%;
+}
+
+/* oranc: 위치 / 크기 */
+#work-oranc {
+    left: 73.80208333333334%;
+    top: 31.666666666666664%;
+    width: 14.375%;
+    height: 25.555555555555554%;
+    border-radius: 6.521739130434782% / 6.521739130434782%;
+}
+
+/* ultratune: 위치 / 크기 */
+#work-ultratune {
+    left: 2.96875%;
+    top: 59.44444444444444%;
+    width: 11.875%;
+    height: 32.96296296296296%;
+    border-radius: 7.894736842105263% / 5.056179775280898%;
+}
+
+/* slowmood: 위치 / 크기 */
+#work-slowmood {
+    left: 15.989583333333334%;
+    top: 59.44444444444444%;
+    width: 11.822916666666668%;
+    height: 32.96296296296296%;
+    border-radius: 7.929515418502203% / 5.056179775280898%;
+}
+
+/* imbank: 위치 / 크기 */
+#work-imbank {
+    left: 63.4375%;
+    top: 7.4074074074074066%;
+    width: 12.8125%;
+    height: 21.388888888888886%;
+    border-radius: 7.317073170731707% / 7.792207792207792%;
+}
+
+/* photo: 위치 / 크기 */
+#work-photo {
+    left: 20.0%;
+    top: 31.296296296296294%;
+    width: 23.854166666666668%;
+    height: 25.09259259259259%;
+    border-radius: 3.9301310043668125% / 6.642066420664207%;
+}
+
+/* beaver: 위치 / 크기 */
+#work-beaver {
+    left: 18.90625%;
+    top: 31.296296296296294%;
+    width: 14.84375%;
+    height: 24.72222222222222%;
+    border-radius: 6.315789473684211% / 6.741573033707865%;
+}
+
+/* 365mc: 위치 / 크기 */
+#work-365mc {
+    left: 58.54166666666667%;
+    top: 31.296296296296294%;
+    width: 14.791666666666668%;
+    height: 24.72222222222222%;
+    border-radius: 6.338028169014084% / 6.741573033707865%;
+}
+
+/* readon: 위치 / 크기 */
+#work-readon {
+    left: 3.28125%;
+    top: 62.49999999999999%;
+    width: 14.84375%;
+    height: 24.72222222222222%;
+    border-radius: 6.315789473684211% / 6.741573033707865%;
+}
+
+/* ==================================================
+   추가 04. 제공 이미지로 만든 고탑 버튼
+   ================================================== */
+.gotop {
+    position: fixed;
+    right: 50px;
+    bottom: 60px;
+    width: clamp(44px, 4.5vw, 72px);
+    z-index: 2000;
+    border-radius: 50%;
+    overflow: hidden;
+    clip-path: circle(42% at 50% 50%);
+    transition: transform .2s ease;
+}
+.gotop img { display: block; width: 100%; height: auto; }
+.gotop:hover { transform: translateY(-4px); }
+.gotop:focus-visible { outline: 3px solid #e33d38; }
+
+/* ==================================================
+   추가 05. 작업물 이미지 팝업
+   ================================================== */
+#work-dialog { margin: auto; padding: 0; width: min(92vw, 1000px); max-height: 90vh; border: 0; border-radius: 12px; background: #fffbe8; }
+#work-dialog::backdrop { background: rgba(0,0,0,.8); }
+.dialog-bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px; }
+.dialog-bar h2 { font: 700 18px sans-serif; }
+.dialog-close { padding: 8px 12px; cursor: pointer; }
+#work-preview { display: block; max-width: 100%; max-height: 75vh; width: auto; height: auto; margin: auto; }
+body.preview-open { overflow: hidden; }
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .instar, .notion, .click { animation: none; }
+    .work-veil, .gotop { transition: none;}
+}
+@media (hover: none) {
+    .work-veil { opacity: 1; }
+}
+
+
+/* 팀 작업물 hover: 원본 흰 썸네일 안쪽 전체를 덮도록 경계 보정 */
+#work-beaver {left:18.802083333333336%;top:31.11111111111111%;width:15.052083333333334%;height:25.185185185185183%;border-radius:6.228373702422145% / 6.61764705882353%;}
+#work-365mc {left:58.4375%;top:31.11111111111111%;width:15.0%;height:25.185185185185183%;border-radius:6.25% / 6.61764705882353%;}
+#work-readon {left:3.1770833333333335%;top:62.31481481481481%;width:15.052083333333334%;height:25.185185185185183%;border-radius:6.228373702422145% / 6.61764705882353%;}
+#work-beaver .work-veil,#work-365mc .work-veil,#work-readon .work-veil {inset:0;width:100%;height:100%;margin:0;}
+
+/* 작업물 모달: 제목·닫기·이미지만 표시 */
+#work-dialog {width:fit-content;max-width:94vw;max-height:92vh;max-height:92dvh;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;overflow:auto;color:#fffbe8;}
+#work-dialog .dialog-bar {position:static;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 0 12px;background:transparent;border:0;}
+#work-dialog .dialog-bar h2 {margin:0;font-family:'YeogiOttaeJalnanGothic',sans-serif;font-size:20px;color:#fffbe8;}
+#work-dialog .dialog-close {flex-shrink:0;margin:0;padding:8px 0 8px 16px;border:0;border-radius:0;background:transparent;color:#fffbe8;box-shadow:none;font:600 16px sans-serif;transition:color .2s;}
+#work-dialog .dialog-close:hover {color:#e33e36;}
+#work-dialog .dialog-close:focus-visible {outline:2px solid #fffbe8;outline-offset:3px;}
+#work-preview {display:block;width:auto;height:auto;max-width:94vw;max-height:calc(92vh - 60px);max-height:calc(92dvh - 60px);margin:0 auto;object-fit:contain;}
+#work-dialog .cheese-cursor {position:fixed;pointer-events:none;z-index:2147483647;}
+
+/* 추가 작업물: Cafe24 — 네 번째 섹션 하단 */
+.coding .cafe24-caption {position:absolute;left:25%;top:74%;width:14%;text-align:center;}
+.cafe24-caption h3 {font:800 clamp(16px,2vw,40px)/1.2 sans-serif;color:#e33e36;margin:0 0 16px;}
+.cafe24-caption p {font:700 clamp(12px,1.3vw,24px)/1.4 sans-serif;}
+#work-cafe24 {left:46%;top:67%;width:19.5%;height:20.5%;border:2px solid #e33e36;border-radius:18px;background:#fff;box-shadow:6px 6px 0 #e33e36;box-sizing:border-box;}
+.cafe24-logo {display:flex;align-items:center;justify-content:center;width:100%;height:100%;font:800 clamp(24px,3.5vw,68px)/1 Arial,sans-serif;letter-spacing:-.06em;color:#080808;}
+.cafe24-logo > span {color:#075bff;}
+#work-cafe24 .work-link {display:block;width:100%;height:100%;}
+/* 말풍선 확대가 천천히 시작하고 끝나도록 */
+.wrap .section-link {transition:transform .5s ease-in-out,scale .5s ease-in-out !important;}
+.wrap .section-link img {transition:transform .5s ease-in-out,scale .5s ease-in-out !important;}
+
+/* Cafe24 여백: 제목과 카드 분리, 오른쪽 패널과 간격 확보 */
+#work-cafe24 .cafe24-logo {font-size:clamp(24px,2.9vw,56px);}
+/* 첨부 비율: 촬영 카드와 같은 크기의 Cafe24 카드 */
+#work-cafe24 {left:42.3%;top:62.8%;width:23.85%;height:25.1%;}
+.coding .cafe24-caption {left:25%;top:69.8%;width:14%;}
+#work-cafe24 .cafe24-logo {font-size:clamp(24px,3.5vw,68px);}
+/* Cafe24 제목·설명: 포트폴리오 공통 글씨체 적용 */
+.coding .cafe24-caption h3,
+.coding .cafe24-caption p {font-family:'YeogiOttaeJalnanGothic',sans-serif;font-weight:normal;}
