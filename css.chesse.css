@@ -721,8 +721,8 @@ body.preview-open { overflow: hidden; }
 .cafe24-logo > span {color:#075bff;}
 #work-cafe24 .work-link {display:block;width:100%;height:100%;}
 /* 말풍선 확대가 천천히 시작하고 끝나도록 */
-.wrap .section-link {transition:transform .5s ease-in-out,scale .5s ease-in-out !important;}
-.wrap .section-link img {transition:transform .5s ease-in-out,scale .5s ease-in-out !important;}
+.wrap .section-link {transition:transform .25s ease-out,scale .25s ease-out !important;}
+.wrap .section-link img {transition:transform .25s ease-out,scale .25s ease-out !important;}
 
 /* Cafe24 여백: 제목과 카드 분리, 오른쪽 패널과 간격 확보 */
 #work-cafe24 .cafe24-logo {font-size:clamp(24px,2.9vw,56px);}
@@ -733,3 +733,7 @@ body.preview-open { overflow: hidden; }
 /* Cafe24 제목·설명: 포트폴리오 공통 글씨체 적용 */
 .coding .cafe24-caption h3,
 .coding .cafe24-caption p {font-family:'YeogiOttaeJalnanGothic',sans-serif;font-weight:normal;}
+
+/* 장식 캐릭터의 투명 영역이 말풍선 마우스 입력을 막지 않도록 */
+.hero .me {border-radius:12px;pointer-events:none;}
+.hero .che {pointer-events:none;}
