@@ -898,7 +898,7 @@ html {scrollbar-width:thin;scrollbar-color:#e33e36 #fffbe8;}
  .responsive .instagram-link:hover,.responsive .instagram-link:active,.responsive .instagram-link:focus-visible {scale:1.1;}
  .cafe24-responsive {grid-column:1 / -1;margin-top:36px;}
  .cafe24-responsive .project_item {width:min(100%,480px);margin:0 auto;}
- .cafe24-box {display:flex;align-items:center;justify-content:center;background:#fff;border:2px solid #e33e36;box-shadow:4px 4px 0 #e33e36;}
+ .cafe24-box {display:flex;align-items:center;justify-content:center;background:#fff;border:2px solid #e33e36;box-shadow:6px 6px 0 #e33e36;}
  .cafe24-box .cafe24-logo {font-size:clamp(40px,9vw,72px);}
 }
 /* 코딩 작업물 정렬: Cafe24가 세 번째 좁은 열로 끼어들지 않도록 */
